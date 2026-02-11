@@ -19,7 +19,7 @@ export default function CityCard({
   return (
     <Link href={`/city/${encodeURIComponent(city.cityName)}`}>
       <div
-        className={`flex items-center justify-between p-5 rounded-2xl bg-gradient-to-br ${cardGradient(city.conditionCode)} shadow-lg hover:shadow-xl transition-shadow cursor-pointer`}
+        className={`flex items-center justify-between p-5 rounded-2xl bg-gradient-to-br ${cardGradient(city.conditionCode)} shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all cursor-pointer`}
       >
         <div className="flex flex-col gap-1">
           <h2 className="text-xl font-semibold text-white">{city.cityName}</h2>
